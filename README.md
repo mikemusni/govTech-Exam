@@ -41,7 +41,7 @@ docker network create --driver bridge --subnet 192.168.2.0/24 --gateway 192.168.
 ```
 * Run the command `docker network ls`, and you should have an additional network ID called `giv-sg`
 
-## Step 4: Create and Start All Docker Containers for Each Folder
+## Step 4: Run All Docker Containers for Each Folder
 Note: Postgres must be executed first before everything else; otherwise, the other containers will not be created.\
 <br>
 /postgres:
