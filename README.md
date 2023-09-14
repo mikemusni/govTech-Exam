@@ -12,7 +12,7 @@ https://documenter.getpostman.com/view/3620091/2s9YC5xXeg
 ### Follow the 5 simple steps
 It is <u>important</u> to follow the sequence of each steps to setup all the environment properly.
 <br>
-## Step 1: Download or clone the repository
+## Step 1: Download or Clone the Repository
 ```
 git clone git@github.com:mikemusni/govTech-Exam.git
 ```
