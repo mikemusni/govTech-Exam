@@ -1,0 +1,3 @@
+#!/bin/bash
+psql -U $POSTGRES_USER -d postgres -c "CREATE DATABASE $POSTGRES_GOVAA;"
+psql -U $POSTGRES_USER -d postgres -c "CREATE DATABASE $POSTGRES_GOV_SURVEY;"

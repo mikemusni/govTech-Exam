@@ -1,0 +1,12 @@
+# dependencies
+backEnd-govSG/node_modules
+backEnd-survey/node_modules
+frontEnd-survey/node_modules
+
+# production
+backEnd-govSG/dist
+backEnd-survey/dist
+frontEnd-survey/build
+
+# misc
+.DS_Store
