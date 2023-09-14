@@ -68,7 +68,7 @@ docker exec -it govsg yarn typeorm:migrate
 ```
 docker exec -it govsurvey yarn typeorm:migrate
 ```
-<br><br>
+<br>
 
 # How to Operate the Application?
 Simply create a user for GovAA using Postman.\
