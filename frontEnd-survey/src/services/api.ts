@@ -18,7 +18,7 @@ interface ProfileResponse extends Response {
 }
 
 interface AuthResponse {
-  status: string | number;
+  status: string;
   data: GovUserProfile
 }
 

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Outlet, useNavigate } from 'react-router-dom'
 import { getLocalStorage } from '../common/helpers'
-import { authService } from '../services/api'
+import { profileService } from '../services/api'
 import { StorageKeys, UserAuthStorage } from '../types/auth'
 
 const Protected: React.FC = () => {
@@ -13,8 +13,8 @@ const Protected: React.FC = () => {
     if (storage === null) {
       navigate('/', { replace: true })
     } else {
-      authService(storage?.token as string).then((auth) => {
-        if (auth.status === 403) {
+      profileService(storage?.token as string).then((auth) => {
+        if (auth.status !== 'success') {
           navigate('/', { replace: true })
         }
       })
