@@ -17,6 +17,9 @@ It is <u>important</u> to follow the sequence of each steps to setup all the env
 git clone git@github.com:mikemusni/govTech-Exam.git
 ```
 ## Step 2: Build Docker Images for Each Folder
+Note: In your terminal you must be in the root directory of the project.\
+`cd govTech-Exam`
+
 /backEnd-govSG:
 ```
 docker build -t mikemusni/govsg:latest ./backEnd-govSG
@@ -39,7 +42,7 @@ docker build -t mikemusni/postgres-sg ./postgres
 ```
 docker network create --driver bridge --subnet 192.168.2.0/24 --gateway 192.168.2.1 gov-sg
 ```
-* Run the command `docker network ls`, and you should have an additional network ID called `giv-sg`
+* Run the command `docker network ls`, and you should have an additional network ID called `gov-sg`
 
 ## Step 4: Run All Docker Containers for Each Folder
 Note: Postgres must be executed first before everything else; otherwise, the other containers will not be created.\
